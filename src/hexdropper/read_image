@@ -1,0 +1,18 @@
+def read_image(image_path):
+    """
+    Read the input image into a matrix of pixel values.
+
+    Parameters
+    ----------
+    image_path : string
+        File path to the image to read.
+
+    Returns
+    -------
+    ndarray(dtype=float, ndim=3)
+        Matrix of RGB values for each pixel.
+
+    Examples
+    --------
+    >>> read_image('tests/images/test_image.jpg')
+    """
