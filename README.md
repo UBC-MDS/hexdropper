@@ -1,6 +1,9 @@
 # hexdropper
 
-Python package for determining the hex colour code given a cropped image.
+A Python package designed for graphic designers, developers, and color enthusiasts. It simplifies the process of obtaining hex color codes from images. Given a cropped image, hexdropper quickly identifies and outputs the corresponding hex color code, streamlining design and development workflows.
+
+## Features
+
 
 ## Installation
 
@@ -23,3 +26,4 @@ Interested in contributing? Check out the contributing guidelines. Please note t
 ## Credits
 
 `hexdropper` was created with [`cookiecutter`](https://cookiecutter.readthedocs.io/en/latest/) and the `py-pkgs-cookiecutter` [template](https://github.com/py-pkgs/py-pkgs-cookiecutter).
+
