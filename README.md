@@ -26,8 +26,8 @@ $ pip install hexdropper
 ## Python Ecosystem Context
 hexdropper fills a unique niche in the Python ecosystem. While there are packages like Pillow for image processing and Matplotlib for visualization, hexdropper specifically focuses on color extraction and conversion, a task not directly addressed by existing packages. Its ability to directly translate image colors into hex codes and visually represent them is distinctive, setting it apart from general-purpose image manipulation tools. Related packages include:
 
-- Pillow: For comprehensive image processing capabilities.
-- Matplotlib: For creating visualizations and figures.
+- [Pillow](https://python-pillow.org/): For comprehensive image processing capabilities.
+- [Matplotlib](https://matplotlib.org/): For creating visualizations and figures.
 
 ## Contributing
 
