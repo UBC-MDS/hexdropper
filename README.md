@@ -29,6 +29,13 @@ hexdropper fills a unique niche in the Python ecosystem. While there are package
 - [Pillow](https://python-pillow.org/): For comprehensive image processing capabilities.
 - [Matplotlib](https://matplotlib.org/): For creating visualizations and figures.
 
+## Contributors
+
+- [Julia Everitt](https://github.com/juliaeveritt)
+- [Hancheng Qin](https://github.com/hchqin)
+- [Joey Wu](https://github.com/joeywwwu)
+- [Mona Zhu](https://github.com/monazhu)
+
 ## Contributing
 
 Interested in contributing? Check out the contributing guidelines. Please note that this project is released with a Code of Conduct. By contributing to this project, you agree to abide by its terms.
