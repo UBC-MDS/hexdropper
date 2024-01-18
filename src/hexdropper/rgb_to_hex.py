@@ -28,4 +28,18 @@ def rgb_to_hex(r, g, b):
     >>> rgb_to_hex(0, 0, 255)
     '0000FF'  # Blue color
     """
-    return None
+    # Helper function to convert a single color value
+    def convert_color(color):
+        quotient = color // 16
+        remainder = int((color / 16 - quotient) * 16)
+        return quotient, remainder
+
+    # Convert each color and concatenate
+    rx, ry = convert_color(r)
+    gx, gy = convert_color(g)
+    bx, by = convert_color(b)
+    
+    # Format string to ensure two characters for each color component
+    return "#{:X}{:X}{:X}{:X}{:X}{:X}".format(rx, ry, gx, gy, bx, by)
+
+
