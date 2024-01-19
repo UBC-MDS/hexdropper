@@ -6,8 +6,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from src.hexdropper.read_image import read_image
 
 # Test data
-filepath_cropped_image_jpg = "tests\\images\\cropped_img.jpg"
-filepath_uncropped_image_png = "tests\\images\\uncropped_img.png"
+filepath_cropped_image_jpg = "tests/images/cropped_img.jpg"
+filepath_uncropped_image_png = "tests/images/uncropped_img.png"
 empty_filepath = ""
 invalid_filepath = "C:\not\a\file"
 
