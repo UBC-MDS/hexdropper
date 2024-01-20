@@ -1,7 +1,4 @@
-import sys
-import os
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from src.hexdropper.rgb_to_hex import rgb_to_hex
+from hexdropper.rgb_to_hex import rgb_to_hex
 
 def test_standard_colors():
     assert rgb_to_hex(255, 0, 0) == '#FF0000'

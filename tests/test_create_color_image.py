@@ -1,8 +1,6 @@
 import pytest
 import os
 from PIL import Image
-import sys
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from hexdropper.create_color_image import create_color_image
 
 # Test data
