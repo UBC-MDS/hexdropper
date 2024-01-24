@@ -1,9 +1,6 @@
 import pytest
-import sys
-import os
 import numpy as np
-sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-from src.hexdropper.read_image import read_image
+from hexdropper.read_image import read_image
 
 # Test data
 filepath_cropped_image_jpg = "tests/images/cropped_img.jpg"
