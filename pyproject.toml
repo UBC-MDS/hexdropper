@@ -11,6 +11,8 @@ python = "^3.9"
 opencv-python = "^4.9.0.80"
 numpy = "^1.26.3"
 matplotlib = "^3.8.2"
+Sphinx = "^4.0.0"
+sphinxcontrib-napoleon = "^0.7"
 
 [tool.poetry.dev-dependencies]
 
