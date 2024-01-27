@@ -86,7 +86,71 @@ $ pytest tests/ --cov=pycounts
 
 ## Usage
 
-- TODO
+Rather than using multiple external tools to obtain the necessary hex code to better customize one's graphics or visualization, we developed a package, `hexdropper`, that would make it easier for users to directly obtain the desired hex code right here in Python.
+
+### Package set up
+
+Once the package is installed, import the package directly by running the following command in Python
+
+```
+import hexdropper
+```
+
+### Read image
+
+Start by reading in a cropped image containing the color you would like to match, using the `read_image` function and specifying the path to the image on the device. The image does not need to be perfectly cropped, as long as the color we are interested in is most prominent.
+
+Note that the input image must be of type **jpg** or any other color formats that only have 3 color channels. Formats like png have 4 channels (RGB and an alpha channel that controls transparency). 
+
+```
+image = read_image.read_image('img/cropped_img.jpg') 
+```
+
+### Obtaining the most common RGB
+
+Now that the cropped image has been imported as an array, we can extract its RGB values. 
+
+Sometimes, it might not be feasible to crop an image perfectly. For instance, a user may have missed a few dark pixels at the edge of the cropped image, or perhaps, the image itself is a bit noisy. To account for these situations, the function `most_common_rgb` takes the most common RGB value in the cropped image and outputs it as a tuple that corresponds to the red, green, and blue channels respectively.
+
+```
+rgb_val = most_common_rgb(image)
+```
+
+### Converting RGB to hexadecimal format
+
+Once we have obtained the most common RGB value from an image using the `most_common_rgb` function, we can convert its output using the `rgb_to_hex` function. This function returns a string representing the color in hexadecimal format.
+
+```
+rgb_to_hex(rgb_val) # the output is 
+```
+
+In addition to accepting tuples, the `rgb_to_hex` function can also accept three separate integers representing the red, green, and blue color channels. 
+
+```
+rgb_to_hex(8, 181, 212)
+```
+
+### Export the extrated color as an image
+
+The user can also create a new image that solely features the extracted color. This allows for a visual reference of the color for other users (particularly if they do not have a programming background) when designing graphics that coordinate with MDS logo's color scheme.
+
+By default, the function will create a 200x200 pixel image with the extrated color. By default, the image will be saved in the current working directory and named with the color code (e.g., 08B5D4.png).
+
+```
+create_color_image(hex_code)
+```
+
+The user can also change the size of the image and the directory to save the image in. we can do so by adjusting the parameters of the `create_color_image` function.
+
+```
+# Create a 100x100 pixel image and save it to a specific path
+create_color_image(hex_code, image_size=(100, 100), output_path='/path/to/save/08B5D4.png')
+```
+
+This package can be especially useful for designers and developers who need visuals that match or complement colors extracted from images, as demonstrated with the UBC MDS Logo in our example.
+
+If you have any questions or feedback about `hexdropper`, feel free to reach out or contribute to our project. Happy color dropping!
+
 
 ## Python Ecosystem Context
 hexdropper fills a unique niche in the Python ecosystem. While there are packages like Pillow for image processing and Matplotlib for visualization, hexdropper specifically focuses on color extraction and conversion, a task not directly addressed by existing packages. Its ability to directly translate image colors into hex codes and visually represent them is distinctive, setting it apart from general-purpose image manipulation tools. Related packages include:
