@@ -44,19 +44,19 @@ Please follow the official poetry [documentation](https://python-poetry.org/docs
 
 Navigate to the root directory of your project folder. Ensure that your virtual conda environment has been activated. Run the following line of code to install existing packages required for the `hexdropper` package:
 
-```
+```bash
 $ poetry install
 ```
 
 If you would like to add a new package or dependency, run the following code in your terminal, replacing `[name-of-dependency]` with the package you would like to install (e.g., numpy)
 
-```
+```bash
 $ poetry add [name-of-dependency]
 ```
 
 You can also pin the specific version of the package you would like to install like so: 
 
-```
+```bash
 $ poetry add numpy=1.22.0 --dry-run
 ```
 
@@ -64,22 +64,20 @@ $ poetry add numpy=1.22.0 --dry-run
 
 Ensure `pytest` and `pytest-cov` are installed via poetry. If not, run the following in your terminal: 
 
-```
+```bash
 $ poetry add --group dev pytest
-```
-```
 $ poetry add --group dev pytest-cov
 ```
 
 Ensuring that your test scripts are completed, then run the following code in your terminal to run the tests for all functions in the package: 
 
-```
+```bash
 $ pytest tests/
 ```
 
 To run coverage tests, run the following command:
 
-```
+```bash
 $ pytest tests/ --cov=pycounts
 ```
 
@@ -92,8 +90,8 @@ Rather than using multiple external tools to obtain the necessary hex code to be
 
 Once the package is installed, import the package directly by running the following command in Python
 
-```
-import hexdropper
+```python
+from hexdropper import *
 ```
 
 ### Read image
@@ -102,7 +100,7 @@ Start by reading in a cropped image containing the color you would like to match
 
 Note that the input image must be of type **jpg** or any other color formats that only have 3 color channels. Formats like png have 4 channels (RGB and an alpha channel that controls transparency). 
 
-```
+```python
 image = read_image.read_image('img/cropped_img.jpg') 
 ```
 
@@ -112,7 +110,7 @@ Now that the cropped image has been imported as an array, we can extract its RGB
 
 Sometimes, it might not be feasible to crop an image perfectly. For instance, a user may have missed a few dark pixels at the edge of the cropped image, or perhaps, the image itself is a bit noisy. To account for these situations, the function `most_common_rgb` takes the most common RGB value in the cropped image and outputs it as a tuple that corresponds to the red, green, and blue channels respectively.
 
-```
+```python
 rgb_val = most_common_rgb(image)
 ```
 
@@ -120,13 +118,13 @@ rgb_val = most_common_rgb(image)
 
 Once we have obtained the most common RGB value from an image using the `most_common_rgb` function, we can convert its output using the `rgb_to_hex` function. This function returns a string representing the color in hexadecimal format.
 
-```
-rgb_to_hex(rgb_val) # the output is 
+```python
+rgb_to_hex(rgb_val) 
 ```
 
 In addition to accepting tuples, the `rgb_to_hex` function can also accept three separate integers representing the red, green, and blue color channels. 
 
-```
+```python
 rgb_to_hex(8, 181, 212)
 ```
 
@@ -136,13 +134,13 @@ The user can also create a new image that solely features the extracted color. T
 
 By default, the function will create a 200x200 pixel image with the extrated color. By default, the image will be saved in the current working directory and named with the color code (e.g., 08B5D4.png).
 
-```
+```python
 create_color_image(hex_code)
 ```
 
 The user can also change the size of the image and the directory to save the image in. we can do so by adjusting the parameters of the `create_color_image` function.
 
-```
+```python
 # Create a 100x100 pixel image and save it to a specific path
 create_color_image(hex_code, image_size=(100, 100), output_path='/path/to/save/08B5D4.png')
 ```
