@@ -1,5 +1,7 @@
 # hexdropper
 
+[![Documentation Status](https://readthedocs.org/projects/hexdropper/badge/?version=latest)](https://hexdropper.readthedocs.io/en/latest/?badge=latest)
+
 A Python package designed for graphic designers, developers, and color enthusiasts. It simplifies the process of obtaining hex color codes from images. Given a cropped image, hexdropper quickly identifies and outputs the corresponding hex color code, streamlining design and development workflows.
 
 ## Contributors
