@@ -34,10 +34,11 @@ Clone a copy of [this repository](https://github.com/UBC-MDS/hexdropper) onto yo
 
 #### Setting up a Conda Environment
 
-We recommend creating an isolated conda environment on your local machine to test and develop the package. To create a conda environment for this project, type in the below command in your terminal.
+We recommend creating an isolated conda environment on your local machine to test and develop the package. To create and activate a conda environment for this project, type in the below command in your terminal.
 
 ```
 $ conda create --name hexdropper python=3.9 -y
+$ conda activate hexdropper
 ```
 
 #### Using Poetry for Package Management
