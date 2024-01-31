@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexdropper"
-version = "0.0.3"
+version = "0.0.4"
 description = "Python package for determining the hex colour code given a cropped image."
 authors = ["Julia Everitt, Hancheng Qin, Joey Wu, Mona Zhu"]
 license = "MIT"

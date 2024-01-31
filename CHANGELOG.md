@@ -2,11 +2,32 @@
 
 
 
+## v0.0.4 (2024-01-31)
+
+### Unknown
+
+* Merge pull request #66 from UBC-MDS/update-readme
+
+Update readme ([`b74717e`](https://github.com/UBC-MDS/hexdropper/commit/b74717e220ab6927928a484d35832f4383784cc7))
+
+
 ## v0.0.3 (2024-01-31)
 
 ### Fix
 
+* fix: Feedback addressed by assigning values to hex_code ([`41d001c`](https://github.com/UBC-MDS/hexdropper/commit/41d001c0dfbac58a7208b50591dfb5485a370485))
+
 * fix: updated pyproject.toml with semantic release info ([`d0bd67c`](https://github.com/UBC-MDS/hexdropper/commit/d0bd67c83cdd164786b8c2017521374efc6842f1))
+
+* fix: Feedback addressed by revising Usage-Read image ([`95f8e53`](https://github.com/UBC-MDS/hexdropper/commit/95f8e539485e1c4393760038721f431e839d2d33))
+
+* fix: Feedback addressed by revising coverage tests ([`bc81daf`](https://github.com/UBC-MDS/hexdropper/commit/bc81daf71f0b612645ad2b655be08c746e09345f))
+
+* fix: Feedback addressed by revising install instruction - conda create ([`58a88b7`](https://github.com/UBC-MDS/hexdropper/commit/58a88b708544d25306c3a2ac658e3e2a7b169922))
+
+* fix: Feedback addressed by updating codes for activate the environment ([`7073503`](https://github.com/UBC-MDS/hexdropper/commit/7073503504b768741b8a6e2549d014dc6856e7dd))
+
+* fix: update install instruction - conda create ([`46b942b`](https://github.com/UBC-MDS/hexdropper/commit/46b942ba5604dc1129c1d730756c5b288cb75c90))
 
 ### Unknown
 
