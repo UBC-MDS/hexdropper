@@ -138,6 +138,7 @@ The user can also create a new image that solely features the extracted color. T
 By default, the function will create a 200x200 pixel image with the extrated color. By default, the image will be saved in the current working directory and named with the color code (e.g., 08B5D4.png).
 
 ```python
+hex_code = rgb_to_hex(8, 181, 212)
 create_color_image(hex_code)
 ```
 
