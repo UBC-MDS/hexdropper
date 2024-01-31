@@ -104,7 +104,7 @@ Start by reading in a cropped image containing the color you would like to match
 Note that the input image must be of type **jpg** or any other color formats that only have 3 color channels. Formats like png have 4 channels (RGB and an alpha channel that controls transparency). 
 
 ```python
-image = read_image.read_image('img/cropped_img.jpg') 
+image = read_image('img/cropped_img.jpg') 
 ```
 
 ### Obtaining the most common RGB
