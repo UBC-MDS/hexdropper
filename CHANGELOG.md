@@ -2,6 +2,19 @@
 
 
 
+## v0.0.3 (2024-01-31)
+
+### Fix
+
+* fix: updated pyproject.toml with semantic release info ([`d0bd67c`](https://github.com/UBC-MDS/hexdropper/commit/d0bd67c83cdd164786b8c2017521374efc6842f1))
+
+### Unknown
+
+* Merge pull request #65 from UBC-MDS/update-token
+
+fix: updated pyproject.toml with semantic release info ([`83ca8c0`](https://github.com/UBC-MDS/hexdropper/commit/83ca8c0df075ff0718a6b65d293a9e78ce340ef6))
+
+
 ## v0.0.2 (2024-01-31)
 
 ### Fix
