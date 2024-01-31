@@ -81,7 +81,7 @@ $ pytest tests/
 To run coverage tests, run the following command:
 
 ```bash
-$ pytest tests/ --cov=pycounts
+$ pytest tests/ --cov=hexdropper
 ```
 
 
