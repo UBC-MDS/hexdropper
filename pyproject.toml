@@ -15,6 +15,14 @@ altair = ">=5.2.0"
 
 [tool.poetry.dev-dependencies]
 
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:tool.poetry.version",
+] 
+branch = "main"                             
+changelog_file = "CHANGELOG.md"             
+build_command = "pip install poetry && poetry build"   
+
 [tool.poetry.group.dev.dependencies]
 pytest = ">=7.4.4"
 pytest-cov = ">=4.1.0"
