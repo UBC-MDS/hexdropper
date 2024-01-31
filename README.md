@@ -34,10 +34,11 @@ Clone a copy of [this repository](https://github.com/UBC-MDS/hexdropper) onto yo
 
 #### Setting up a Conda Environment
 
-We recommend creating an isolated conda environment on your local machine to test and develop the package. To create a conda environment for this project, type in the below command in your terminal, replacing `[your_env_name]` with your desired environment name (e.g., hexdropper)
+We recommend creating an isolated conda environment on your local machine to test and develop the package. To create and activate a conda environment for this project, type in the below command in your terminal.
 
 ```
-$ conda create --name [your_env_name] python=3.9 -y
+$ conda create --name hexdropper python=3.9 -y 
+$ conda activate hexdropper
 ```
 
 #### Using Poetry for Package Management
@@ -80,7 +81,7 @@ $ pytest tests/
 To run coverage tests, run the following command:
 
 ```bash
-$ pytest tests/ --cov=pycounts
+$ pytest tests/ --cov=hexdropper
 ```
 
 
@@ -103,7 +104,7 @@ Start by reading in a cropped image containing the color you would like to match
 Note that the input image must be of type **jpg** or any other color formats that only have 3 color channels. Formats like png have 4 channels (RGB and an alpha channel that controls transparency). 
 
 ```python
-image = read_image.read_image('img/cropped_img.jpg') 
+image = read_image('img/cropped_img.jpg') 
 ```
 
 ### Obtaining the most common RGB
@@ -137,6 +138,7 @@ The user can also create a new image that solely features the extracted color. T
 By default, the function will create a 200x200 pixel image with the extrated color. By default, the image will be saved in the current working directory and named with the color code (e.g., 08B5D4.png).
 
 ```python
+hex_code = rgb_to_hex(8, 181, 212)
 create_color_image(hex_code)
 ```
 
