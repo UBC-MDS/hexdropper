@@ -18,6 +18,7 @@ def most_common_rgb(input_array):
     Examples
     --------
     >>> most_common_rgb(img_arr)
+    (8, 181, 213)
     """
     # check that the input range is between 0 and 255
     if np.min(input_array) < 0 or np.max(input_array) > 255:
