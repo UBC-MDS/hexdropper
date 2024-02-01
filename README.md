@@ -26,6 +26,16 @@ The key functionalities include:
 
 The current package is still under development. We have provided below a set of developer installation instructions.
 
+### User Installation
+
+To install `hexdropper`, simply run the following command in your terminal:
+
+```bash
+$ pip install hexdropper
+```
+
+This will download and install the latest version of `hexdropper` from the Python Package Index (PyPI).
+
 ### Developer Installation
 
 #### Getting Started
@@ -36,7 +46,7 @@ Clone a copy of [this repository](https://github.com/UBC-MDS/hexdropper) onto yo
 
 We recommend creating an isolated conda environment on your local machine to test and develop the package. To create and activate a conda environment for this project, type in the below command in your terminal.
 
-```
+```bash
 $ conda create --name hexdropper python=3.9 -y 
 $ conda activate hexdropper
 ```
@@ -86,7 +96,6 @@ $ pytest tests/ --cov=hexdropper
 
 
 ## Usage
-
 Rather than using multiple external tools to obtain the necessary hex code to better customize one's graphics or visualization, we developed a package, `hexdropper`, that would make it easier for users to directly obtain the desired hex code right here in Python.
 
 ### Package set up
