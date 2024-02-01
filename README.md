@@ -1,6 +1,14 @@
 # hexdropper
 
-[![Documentation Status](https://readthedocs.org/projects/hexdropper/badge/?version=latest)](https://hexdropper.readthedocs.io/en/latest/?badge=latest)
+<!-- CI/CD Badge --> [![ci-cd](https://github.com/UBC-MDS/hexdropper/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/hexdropper/actions/workflows/ci-cd.yml)
+<!-- CodeCov Badge -->[![codecov](https://codecov.io/gh/UBC-MDS/hexdropper/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/hexdropper)
+<!-- Python Version Badge -->[![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) 
+<!-- Documentation Status Badge -->[![Documentation Status](https://readthedocs.org/projects/hexdropper/badge/?version=latest)](https://hexdropper.readthedocs.io/en/latest/?badge=latest)
+<!-- Code Size Badge -->![codesize](https://img.shields.io/github/languages/code-size/UBC-MDS/hexdropper)
+<!-- License Badge -->[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<!-- Project Status Badge -->[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+<!-- Version Status Badge -->[![version](https://img.shields.io/github/v/release/UBC-MDS/hexdropper)](https://github.com/UBC-MDS/hexdropper/releases)
+<!-- Release Date Badge -->[![release](https://img.shields.io/github/release-date/UBC-MDS/hexdropper)](https://github.com/UBC-MDS/hexdropper/releases)
 
 A Python package designed for graphic designers, developers, and color enthusiasts. It simplifies the process of obtaining hex color codes from images. Given a cropped image, hexdropper quickly identifies and outputs the corresponding hex color code, streamlining design and development workflows.
 
