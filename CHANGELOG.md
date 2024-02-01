@@ -2,7 +2,26 @@
 
 
 
+## v0.0.5 (2024-02-01)
+
+### Unknown
+
+* Merge pull request #68 from UBC-MDS/fix-most-common-rgb-func
+
+Fix most common rgb func ([`4e412e3`](https://github.com/UBC-MDS/hexdropper/commit/4e412e3ef14a07510c4389347bbfe2cf54bbd203))
+
+* Merge pull request #67 from UBC-MDS/fix-example-vignette
+
+fix: Feedback in example.ipynb addressed ([`1ba6dea`](https://github.com/UBC-MDS/hexdropper/commit/1ba6deaeb3c81c8f9e214895424156fbaf947aee))
+
+
 ## v0.0.4 (2024-01-31)
+
+### Fix
+
+* fix: addressing milestone 1 feedback by adding example output in the function docstring ([`6e4a5b2`](https://github.com/UBC-MDS/hexdropper/commit/6e4a5b295fc5f5584ae7047350800e0ea06a51aa))
+
+* fix: Feedback in example.ipynb addressed by updating heading to improve readability, provide clearer example usage, updating example used, and added image output directly in the example ([`bdfc706`](https://github.com/UBC-MDS/hexdropper/commit/bdfc7060b2539c1bb4064594fc4ba8eab8992ccc))
 
 ### Unknown
 
