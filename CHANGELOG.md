@@ -2,6 +2,19 @@
 
 
 
+## v0.0.7 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by updating user emails in the pyproject.toml ([`b90ae23`](https://github.com/UBC-MDS/hexdropper/commit/b90ae23d7c8046d2647404b449485baf7a575b16))
+
+### Unknown
+
+* Merge pull request #70 from UBC-MDS/update-readme
+
+fix: Feedback addressed by updating user emails in the pyproject.toml ([`18d6f6f`](https://github.com/UBC-MDS/hexdropper/commit/18d6f6ff4023024244ee8e449a7205f8ec0f91bf))
+
+
 ## v0.0.6 (2024-02-02)
 
 ### Fix
