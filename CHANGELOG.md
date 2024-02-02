@@ -2,6 +2,23 @@
 
 
 
+## v0.0.6 (2024-02-02)
+
+### Fix
+
+* fix: Feedback addressed by updating relevant Badges ([`d734c80`](https://github.com/UBC-MDS/hexdropper/commit/d734c80b2c25b789440bf6ea5fc35d0057cfcff6))
+
+### Unknown
+
+* Merge pull request #69 from UBC-MDS/update-readme
+
+Update the readme by updating the user installation instructions and relevant badges. ([`c7b357b`](https://github.com/UBC-MDS/hexdropper/commit/c7b357bfc85b85e4b40f51d0cb6f5de77870e37a))
+
+* update Badge ([`2127e4a`](https://github.com/UBC-MDS/hexdropper/commit/2127e4a6b7a770a779fc014e621dd760a7eb81e2))
+
+* update User Installation ([`a4c8daa`](https://github.com/UBC-MDS/hexdropper/commit/a4c8daa8fdddfeaec5ef2d20cf33ed417defc38d))
+
+
 ## v0.0.5 (2024-02-01)
 
 ### Unknown
