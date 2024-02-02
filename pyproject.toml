@@ -2,7 +2,7 @@
 name = "hexdropper"
 version = "0.0.5"
 description = "Python package for determining the hex colour code given a cropped image."
-authors = ["Julia Everitt, Hancheng Qin, Joey Wu, Mona Zhu"]
+authors = ["Julia Everitt <juliaeveritt13@gmail.com>", "Hancheng Qin <hcqin@student.ubc.ca>", "Joey Wu <joeywwwu@outlook.com>", "Mona Zhu <monajhzhu@gmail.com>"]
 license = "MIT"
 readme = "README.md"
 
