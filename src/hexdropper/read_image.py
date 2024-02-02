@@ -13,17 +13,28 @@ def read_image(image_path):
     Returns
     -------
     ndarray(dtype=float, ndim=3)
-        Matrix of RGB values for each pixel.
+        Matrix of RGB values for each pixel, in 
+        order BGR.
 
     Examples
     --------
     >>> read_image('tests/images/test_image.jpg')
+    [[[213 181   8]
+      [213 181   8]
+       ...
+      [213 181   8]]
+
+      ...
+     [[213 181   8]
+      [213 181   8]
+       ...
+      [213 181   8]]]
     """
     if not isinstance(image_path, str):
         raise ValueError("Image filepath is of incorrect type - it should be a string.")
     
     if not os.path.isfile(image_path):
         raise KeyError("Image filepath does not exist: ", os.path.join(os.getcwd(),image_path))
-
+    
     image_matrix = cv2.imread(image_path)
     return image_matrix
