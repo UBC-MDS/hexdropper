@@ -1,6 +1,15 @@
 # hexdropper
 
-[![Documentation Status](https://readthedocs.org/projects/hexdropper/badge/?version=latest)](https://hexdropper.readthedocs.io/en/latest/?badge=latest)
+[![ci-cd](https://github.com/UBC-MDS/hexdropper/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/UBC-MDS/hexdropper/actions/workflows/ci-cd.yml) <!-- CI/CD Badge --> 
+[![codecov](https://codecov.io/gh/UBC-MDS/hexdropper/branch/main/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/hexdropper) <!-- CodeCov Badge -->
+[![Python 3.9.0](https://img.shields.io/badge/python-3.9.0-blue.svg)](https://www.python.org/downloads/release/python-390/) <!-- Python Version Badge -->
+[![Documentation Status](https://readthedocs.org/projects/hexdropper/badge/?version=latest)](https://hexdropper.readthedocs.io/en/latest/?badge=latest) <!-- Documentation Status Badge -->
+![codesize](https://img.shields.io/github/languages/code-size/UBC-MDS/hexdropper) <!-- Code Size Badge -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <!-- License Badge -->
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active) <!-- Project Status Badge -->
+[![version](https://img.shields.io/github/v/release/UBC-MDS/hexdropper)](https://github.com/UBC-MDS/hexdropper/releases) <!-- Version Status Badge -->
+[![release](https://img.shields.io/github/release-date/UBC-MDS/hexdropper)](https://github.com/UBC-MDS/hexdropper/releases) <!-- Release Date Badge -->
+
 
 A Python package designed for graphic designers, developers, and color enthusiasts. It simplifies the process of obtaining hex color codes from images. Given a cropped image, hexdropper quickly identifies and outputs the corresponding hex color code, streamlining design and development workflows.
 
@@ -26,6 +35,16 @@ The key functionalities include:
 
 The current package is still under development. We have provided below a set of developer installation instructions.
 
+### User Installation
+
+To install `hexdropper`, simply run the following command in your terminal:
+
+```bash
+$ pip install hexdropper
+```
+
+This will download and install the latest version of `hexdropper` from the Python Package Index (PyPI).
+
 ### Developer Installation
 
 #### Getting Started
@@ -36,7 +55,7 @@ Clone a copy of [this repository](https://github.com/UBC-MDS/hexdropper) onto yo
 
 We recommend creating an isolated conda environment on your local machine to test and develop the package. To create and activate a conda environment for this project, type in the below command in your terminal.
 
-```
+```bash
 $ conda create --name hexdropper python=3.9 -y 
 $ conda activate hexdropper
 ```
@@ -86,7 +105,6 @@ $ pytest tests/ --cov=hexdropper
 
 
 ## Usage
-
 Rather than using multiple external tools to obtain the necessary hex code to better customize one's graphics or visualization, we developed a package, `hexdropper`, that would make it easier for users to directly obtain the desired hex code right here in Python.
 
 ### Package set up
