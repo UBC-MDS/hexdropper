@@ -4,7 +4,8 @@ from hexdropper.read_image import read_image
 
 # Test data
 filepath_cropped_image_jpg = "tests/images/cropped_img.jpg"
-filepath_uncropped_image_png = "tests/images/uncropped_img.png"
+filepath_cropped_image_png = "tests/images/cropped_img.png"
+filepath_uncropped_image_png = "tests/images/uncropped_img.jpg"
 empty_filepath = ""
 invalid_filepath = "C:\not\a\file"
 
@@ -19,6 +20,10 @@ def test_read_image_returns_array():
 # Test returned array has RGB value for each pixel
 def test_correct_output_dim():
     assert read_image(filepath_cropped_image_jpg).shape[2] == 3
+
+# Test alpha channel is ignored for png images
+def test_ignore_alpha():
+    assert read_image(filepath_cropped_image_png).shape[2] == 3
 
 # Test error is thrown for empty file path
 def test_error_empty_path():
