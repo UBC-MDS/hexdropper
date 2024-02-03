@@ -2,6 +2,25 @@
 
 
 
+## v0.0.8 (2024-02-03)
+
+### Fix
+
+* fix: updated  with information about importing JPG vs PNG ([`8e77b80`](https://github.com/UBC-MDS/hexdropper/commit/8e77b800335ae935e4ded735f124d32b5b498dc0))
+
+### Unknown
+
+* Merge pull request #72 from UBC-MDS/fix-example-vignette
+
+fix: updated vignette with information about importing JPG vs PNG ([`4e6537c`](https://github.com/UBC-MDS/hexdropper/commit/4e6537c1641dedfda78bed45567737195a298d20))
+
+* Merge pull request #71 from UBC-MDS/fix-read-img
+
+test read_image ignores alpha channel on png ([`33e7f5c`](https://github.com/UBC-MDS/hexdropper/commit/33e7f5c76e78fc8249aa859b76ae15087b36f947))
+
+* test read_image ignores alpha channel on png ([`aa13eb3`](https://github.com/UBC-MDS/hexdropper/commit/aa13eb36dc54d065494e0240f40e1ab532bfe7df))
+
+
 ## v0.0.7 (2024-02-02)
 
 ### Fix
